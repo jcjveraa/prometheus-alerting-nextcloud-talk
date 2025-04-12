@@ -7,14 +7,14 @@ ENV NODE_ENV=production
 # Copy package files and install all dependencies (including dev dependencies)
 COPY package*.json ./
 COPY tsconfig.json ./
-RUN npm ci
+RUN NODE_ENV=development npm ci
 
 # Copy source code and compile TypeScript
 COPY src ./src
 RUN npm run build
 
 # Generate production node_modules
-RUN npm ci --only=production
+RUN npm ci
 
 # Final stage
 FROM node:22-alpine
