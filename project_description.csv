@@ -1,0 +1,6 @@
+﻿"User Story ID","As A","I Want","So That"
+"1","Alert Sender","Receive Prometheus alerts via webhook","Automatically forward them to Nextcloud Talk for visibility"
+"2","System Administrator","Monitor the integration service status","Ensure high availability and quick responses between services"
+"3","DevOps Engineer","Maintain low memory overhead","Optimize resource utilization within a containerized environment"
+"4","Developer","Write clean, maintainable code quickly","Utilize self-documenting languages like Go or Node.js"
+"5","Security Officer","Safely manage authentication tokens","Avoid exposing sensitive Nextcloud Talk bot credentials"
