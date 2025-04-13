@@ -47,7 +47,7 @@ export function createApp(customClient?: AxiosInstance) {
     return app;
 }
 
-// Only start the server if this file is run directly
+/* istanbul ignore if */
 if (require.main === module) {
     const env = validateEnv();
     const app = createApp();

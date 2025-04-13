@@ -6,8 +6,8 @@ export const AlertAnnotationSchema = z.record(z.string().optional());
 
 export const PrometheusAlertSchema = z.object({
     status: z.string(),
-    labels: AlertLabelSchema,
-    annotations: AlertAnnotationSchema,
+    labels: AlertLabelSchema.optional().default({}),
+    annotations: AlertAnnotationSchema.optional().default({}),
     startsAt: z.string(),
     endsAt: z.string(),
     generatorURL: z.string()
