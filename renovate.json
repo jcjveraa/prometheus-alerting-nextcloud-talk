@@ -7,5 +7,8 @@
       "versionCompatibility": "^(?<version>[^-]+)(?<compatibility>-.*)?$",
       "versioning": "node"
     }
-  ]
+  ],
+  "docker": {
+    "pinDigests": true
+  }
 }
