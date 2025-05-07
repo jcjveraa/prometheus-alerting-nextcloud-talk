@@ -2,6 +2,9 @@
 
 A ~~production-ready~~ run at your own risk for now (but plans are to make it better) Node.js service that forwards Prometheus alerts to a Nextcloud Talk chat room via webhooks.
 
+## Disclaimer
+This thing is an experiment in vibe coding, almost all code including 95% of this readme was created by github copilot with my guidance. It seems to work though :)
+
 ## Features
 
 - Receives Prometheus alerts via webhook
