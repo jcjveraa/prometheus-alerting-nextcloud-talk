@@ -1,14 +1,26 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "automerge": true,
+  "automergeType": "pr",
+  "requiredStatusChecks": null,
+
   "packageRules": [
     {
-      "matchDatasources": ["docker"],
-      "matchPackageNames": ["node"],
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchPackageNames": [
+        "node"
+      ],
       "versionCompatibility": "^(?<version>[^-]+)(?<compatibility>-.*)?$",
       "versioning": "node"
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
     }
-  ],
-  "docker": {
-    "pinDigests": true
-  }
+  ]
 }
