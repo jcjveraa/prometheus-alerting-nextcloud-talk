@@ -25,11 +25,11 @@ jobs:
     - run: npm ci
     - run: npm run build
     - run: npm test
-    - name: Upload Build Artifacts
-      uses: actions/upload-artifact@v3
+    - name: Upload Entire Project
+      uses: actions/upload-artifact@v4
       with:
-        name: build-artifacts
-        path: dist/
+        name: project-folder
+        path: ./
 
   docker-build:
     name: Build Docker Image
@@ -38,9 +38,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Download Build Artifacts
-      uses: actions/download-artifact@v3
+    - name: Download Project Folder
+      uses: actions/download-artifact@v4
       with:
-        name: build-artifacts
+        name: project-folder
     - name: Build Docker Image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
