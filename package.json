@@ -1,6 +1,6 @@
 {
   "name": "prom-alerting-nextcloud-talk",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Service that forwards Prometheus alerts to Nextcloud Talk",
   "main": "index.js",
   "scripts": {

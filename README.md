@@ -1,6 +1,6 @@
 # Prometheus Alert to Nextcloud Talk Forwarder
 
-A production-ready Node.js service that forwards Prometheus alerts to a Nextcloud Talk chat room via webhooks.
+A ~~production-ready~~ run at your own risk for now (but plans are to make it better) Node.js service that forwards Prometheus alerts to a Nextcloud Talk chat room via webhooks.
 
 ## Features
 
