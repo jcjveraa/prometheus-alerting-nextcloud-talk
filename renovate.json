@@ -3,9 +3,7 @@
   "extends": [
     "config:best-practices"
   ],
-  "automerge": true,
   "automergeType": "pr",
-  "requiredStatusChecks": null,
   "lockFileMaintenance": { "enabled": true },
 
   "packageRules": [
