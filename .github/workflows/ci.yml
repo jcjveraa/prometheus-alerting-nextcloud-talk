@@ -49,7 +49,7 @@ jobs:
         echo "VERSION=$VERSION" >> $GITHUB_ENV
     - name: Log in to Docker Hub
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-      uses: docker/login-action@465a07811f14bebb1938fbed4728c6a1ff8901fc # v2
+      uses: docker/login-action@74a5d142397b4f367a81961eba4e8cd7edddf772 # v3
       with:
         username: jcjv
         password: ${{ secrets.DOCKER_PASSWORD }}
