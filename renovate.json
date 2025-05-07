@@ -5,12 +5,19 @@
   ],
   "automerge": true,
   "automergeType": "pr",
-  "requiredStatusChecks": null,
-  "lockFileMaintenance": { "enabled": true },
-
+  "ignoreTests": true,
+  "lockFileMaintenance": {
+    "enabled": true
+  },
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "lockFileMaintenance"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest",
+        "lockFileMaintenance"
+      ],
       "automerge": true
     }
   ]
