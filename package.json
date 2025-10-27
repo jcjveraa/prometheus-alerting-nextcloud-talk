@@ -35,7 +35,7 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
-    "@types/express": "5.0.4",
+    "@types/express": "5.0.5",
     "@types/jest": "30.0.0",
     "@types/node": "22.18.12",
     "@types/supertest": "6.0.3",
