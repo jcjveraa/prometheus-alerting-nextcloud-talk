@@ -1,4 +1,4 @@
-FROM node:22@sha256:7e25bbef3b3bd5208423ff6eba5bc4dcfd701fc03e1e9ea6599b860a29e4d9bf
+FROM node:22@sha256:22ab967fdf8d9ce32387d0c06ab2e32c6793d860bb93ccce6e27927ccdfeee6d
 
 # Install basic development tools
 RUN apt update && apt install -y less man-db sudo
